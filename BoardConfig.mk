@@ -26,6 +26,7 @@ TARGET_KERNEL_CONFIG := vendor/apollopro_defconfig
 endif
 
 # Properties
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/vendor.prop
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 
 # Init
