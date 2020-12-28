@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+TARGET_USES_PREBUILT_KERNEL := true
+
 # Inherit from xiaomi sm8250-common
 $(call inherit-product, device/xiaomi/sm8250-common/common.mk)
 
@@ -24,6 +26,12 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 # Device-specific settings
 PRODUCT_PACKAGES += \
     DeviceParts
+
+# Kernel
+NEED_KERNEL_MODULE_VENDOR_OVERLAY := true
+ifeq ($(TARGET_USES_PREBUILT_KERNEL), true)
+$(call inherit-product, device/xiaomi/apollopro-kernel/kernel.mk)
+endif
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/apollopro/apollopro-vendor.mk)
