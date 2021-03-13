@@ -7,7 +7,7 @@
 TARGET_USES_PREBUILT_KERNEL := true
 
 # Inherit from xiaomi sm8250-common
-$(call inherit-product, device/xiaomi/sm8250-common/common.mk)
+$(call inherit-product, device/xiaomi/sm8250-common/kona.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
