@@ -1,37 +1,5 @@
 # All blobs below are extracted from 
 
-# Addition
-vendor/lib64/hw/gralloc.kona.so
-vendor/bin/hw/vendor.xiaomi.hardware.campostproc@1.0-service
-vendor/etc/init/vendor.xiaomi.hardware.campostproc@1.0-service.rc
-vendor/lib/hw/vendor.xiaomi.hardware.campostproc@1.0-impl.so
-vendor/lib/hw/vendor.xiaomi.hardware.citsensorservice@1.1-impl.so
-vendor/lib/hw/vendor.xiaomi.hardware.citvendorservice@1.0-impl.so
-vendor/lib64/libcom.xiaomi.metadatautils.so
-vendor/lib/vendor.xiaomi.hardware.campostproc@1.0.so
-vendor/lib64/hw/vendor.xiaomi.hardware.campostproc@1.0-impl.so
-vendor/lib64/hw/vendor.xiaomi.hardware.citsensorservice@1.1-impl.so
-vendor/lib64/hw/vendor.xiaomi.hardware.citvendorservice@1.0-impl.so
-vendor/lib/vendor.display.postproc@1.0.so
-vendor/lib/libdisplayqos.so
-vendor/lib/libdisplayskuutils.so
-vendor/lib/libsdm-color.so
-vendor/lib/libsdm-colormgr-algo.so
-vendor/lib/libsdm-diag.so
-vendor/lib/libsdm-disp-vndapis.so
-vendor/lib/libsdmextension.so
-vendor/lib/libspcom.so
-vendor/lib/libspl.so
-vendor/lib/libssd.so
-vendor/lib64/vendor.xiaomi.hardware.campostproc@1.0.so
-vendor/etc/mdss_dsi_j3s_37_02_0a_dsc_video_mi.xml
-vendor/lib/hw/displayfeature.default.so
-vendor/lib/libdisplayconfig.qti.so
-vendor/lib/libdisplayfeature.so
-vendor/lib/libdisplayfeatureservice.so
-vendor/lib/libgralloc.qti.so
-vendor/lib64/hw/displayfeature.default.so
-
 # ADSP-Modules
 vendor/lib/rfsa/adsp/capi_v2_cirrus_sp.so
 vendor/lib/rfsa/adsp/libarcsoft_hdrplus_hvx_skel.so
@@ -62,11 +30,6 @@ vendor/etc/acdbdata/Forte/Forte_Speaker_cal.acdb
 vendor/etc/acdbdata/Forte/Forte_workspaceFile.qwsp
 
 # Bluetooth
-vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
-vendor/lib/hw/audio.bluetooth.default.so
-vendor/lib/hw/audio.bluetooth_qti.default.so
-vendor/lib/libbluetooth_audio_session.so
-vendor/lib/libbluetooth_audio_session_qti.so
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/hw/audio.bluetooth.default.so
 vendor/lib64/hw/audio.bluetooth_qti.default.so
@@ -83,7 +46,6 @@ vendor/lib64/hw/camera.xiaomi.so
 vendor/lib/libcom.qti.chinodeutils.so
 vendor/lib/libgui_vendor.so
 vendor/lib/hw/camera.qcom.so
-vendor/lib/hw/camera.xiaomi.so
 vendor/lib/hw/com.qti.chi.override.so
 vendor/etc/camera/eisoverridesettings.txt
 vendor/lib/android.hardware.camera.provider@2.4-external.so
@@ -565,7 +527,6 @@ vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.0_vendor.so
 vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.1.so
 vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.1_vendor.so
-vendor/lib64/vendor.xiaomi.hardware.citvendorservice@1.0.so
 vendor/lib64/hw/displayfeature.default.so
 vendor/lib64/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so
 vendor/etc/ltm_config_xiaomi_37_02_0a_video_mode_dsc_dsi_panel.xml
@@ -575,7 +536,6 @@ vendor/etc/qdcm_calib_data_xiaomi_37_02_0a_video_mode_dsc_dsi_panel.xml
 # DRM
 vendor/bin/qseecomd
 vendor/lib/libsdedrm.so
-vendor/lib/libStDrvInt.so
 vendor/lib64/libsdedrm.so
 vendor/lib64/libStDrvInt.so
 
@@ -642,20 +602,13 @@ vendor/lib/hw/lights.kona.so
 vendor/lib64/hw/lights.kona.so
 
 # Listen
-vendor/lib/hw/android.hardware.soundtrigger@2.1-impl.so
-vendor/lib/hw/android.hardware.soundtrigger@2.2-impl.so
 vendor/lib/hw/android.hardware.soundtrigger@2.3-impl.so
 vendor/lib/hw/sound_trigger.primary.kona.so
 vendor/lib/libgcs-calwrapper.so
 vendor/lib/libgcs-ipc.so
 vendor/lib/libgcs.so
 vendor/lib/libsmwrapper.so
-vendor/lib64/hw/android.hardware.soundtrigger@2.2-impl.so
 vendor/lib64/hw/android.hardware.soundtrigger@2.3-impl.so
-vendor/lib64/hw/sound_trigger.primary.kona.so
-vendor/lib64/libgcs-calwrapper.so
-vendor/lib64/libgcs-ipc.so
-vendor/lib64/libgcs.so
 
 # OMX
 vendor/lib/libAlacSwDec.so
@@ -887,13 +840,12 @@ vendor/lib64/sensors.mius.proximity.so
 vendor/lib64/sensors.ssc.so	
 vendor/lib64/sensors.touch.so	
 
-	
 # SSR	
-#vendor/bin/ssr_diag	
-#vendor/bin/ssr_setup	
-#vendor/bin/subsystem_ramdump	
-#vendor/lib/libsubsystem_control.so	
-#vendor/lib64/libsubsystem_control.so
+vendor/bin/ssr_diag	
+vendor/bin/ssr_setup	
+vendor/bin/subsystem_ramdump	
+vendor/lib/libsubsystem_control.so	
+vendor/lib64/libsubsystem_control.so
 
 # Thermal	
 vendor/etc/thermal-4k.conf	
@@ -907,23 +859,3 @@ vendor/etc/thermal-normal.conf
 vendor/etc/thermal-phone.conf
 vendor/etc/thermal-tgame.conf
 vendor/etc/thermald-devices.conf
-
-# Thermal
-vendor/bin/mi_thermald 
-vendor/etc/init/init.mi_thermald.rc
-
-# Thermal engine
-vendor/bin/thermal-engine 
--vendor/lib/libthermalclient.so
--vendor/lib64/libthermalclient.so
-
-# Missing
-vendor/lib64/libstagefright_bufferpool@2.0.1.so
-vendor/lib64/camera/com.qti.sensormodule.apollo_ofilm_s5k3t2_front.bin
-vendor/lib64/camera/com.qti.sensormodule.apollo_semco_s5khmx_wide_global.bin
-vendor/lib64/camera/com.qti.sensormodule.apollo_sunny_imx682_wide_cn.bin
-vendor/lib64/hw/gralloc.kona.so
-vendor/lib/vendor.display.config@1.9.so
-vendor/lib/libstagefright_bufferpool@2.0.1.so
-vendor/lib/hw/camera.qcom.so
-vendor/lib/camera/com.qti.sensormodule.apollo_semco_s5khmx_wide_global.bin
