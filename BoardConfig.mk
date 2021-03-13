@@ -28,5 +28,9 @@ endif
 # Properties
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_apollopro
+TARGET_RECOVERY_DEVICE_MODULES := libinit_apollopro
+
 # inherit from the proprietary version
 -include vendor/xiaomi/apollopro/BoardConfigVendor.mk
