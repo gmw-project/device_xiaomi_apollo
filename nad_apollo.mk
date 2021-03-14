@@ -8,8 +8,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from apollopro device
-$(call inherit-product, device/xiaomi/apollopro/device.mk)
+# Inherit from apollo device
+$(call inherit-product, device/xiaomi/apollo/device.mk)
 
 # Inherit some common NusantaraProject stuff.
 $(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
@@ -22,11 +22,11 @@ USE_GAPPS ?= true
 USE_AOSP_CLOCK := true
 
 # Product
-PRODUCT_NAME := nad_apollopro
-PRODUCT_DEVICE := apollopro
+PRODUCT_NAME := nad_apollo
+PRODUCT_DEVICE := apollo
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Mi 10T Pro
+PRODUCT_MODEL ?= Mi 10T Pro
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 

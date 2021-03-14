@@ -18,7 +18,7 @@
 set -e
 
 # Required!
-export DEVICE=apollopro
+export DEVICE=apollo
 export DEVICE_COMMON=sm8250-common
 export VENDOR=xiaomi
 
