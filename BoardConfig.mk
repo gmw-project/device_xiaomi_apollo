@@ -19,11 +19,8 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 TARGET_SCREEN_DENSITY := 440
 
 # Kernel
-ifeq ($(TARGET_USES_PREBUILT_KERNEL), true)
 -include device/xiaomi/apollopro-kernel/BoardConfigKernel.mk
-else
-TARGET_KERNEL_CONFIG := vendor/apollopro_defconfig
-endif
+TARGET_KERNEL_CONFIG := vendor/kona-perf_defconfig
 
 # Properties
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/vendor.prop

@@ -29,10 +29,7 @@ PRODUCT_PACKAGES += \
     DeviceParts
 
 # Kernel
-NEED_KERNEL_MODULE_VENDOR_OVERLAY := true
-ifeq ($(TARGET_USES_PREBUILT_KERNEL), true)
 $(call inherit-product, device/xiaomi/apollopro-kernel/kernel.mk)
-endif
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/apollopro/apollopro-vendor.mk)
