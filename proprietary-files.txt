@@ -1,4 +1,4 @@
-# All blobs below are extracted from 
+# All blobs below are extracted - from Redmi apollo_eea V12.1.2.0.RJDEUXM version, unless pinned
 
 # ADSP-Modules
 vendor/lib/rfsa/adsp/capi_v2_cirrus_sp.so
