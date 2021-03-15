@@ -36,6 +36,10 @@ vendor/lib64/hw/audio.bluetooth_qti.default.so
 vendor/lib64/libbluetooth_audio_session.so
 vendor/lib64/libbluetooth_audio_session_qti.so
 
+# Camera - from APOLLO 21.3.11
+vendor/lib64/libhdrdynamicootf.so|3dc3c098e285fab5a0b3306b2b750e74bbcfba86
+vendor/lib64/libhdrdynamic.so|b4f1c90d04c158c56afb0644ccf553a19d5ff115
+
 # Camera
 vendor/lib64/libarcdualcamsat.so
 vendor/lib64/libnanopb.so
@@ -44,8 +48,6 @@ vendor/lib/libofflinelog.so
 vendor/lib/libnanopb.so
 vendor/lib/libsynx.so
 vendor/lib/libthreadutils.so
-vendor/lib64/libhdrdynamicootf.so
-vendor/lib64/libhdrdynamic.so
 system/system/lib/vendor.xiaomi.hardware.campostproc@1.0.so
 system/system/lib64/vendor.xiaomi.hardware.campostproc@1.0.so
 vendor/lib64/libxmi_hdr_checker.so
