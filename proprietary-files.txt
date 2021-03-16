@@ -440,12 +440,16 @@ vendor/lib64/libmmcamera_faceproc2.so
 vendor/bin/batterysecret
 vendor/etc/init/init.batterysecret.rc
 
+# CVP
+vendor/lib64/libcvp2.so
+vendor/lib64/libcvp2_hfi.so
+vendor/lib64/libcvp_common.so
+vendor/lib64/libcvpcpuRev_skel.so
+
 # Display-Hardware
 vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service
 vendor/etc/init/vendor.qti.hardware.display.composer-service.rc
-vendor/lib/hw/gralloc.kona.so
 vendor/lib/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so
-vendor/lib64/hw/gralloc.kona.so
 vendor/lib64/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so
 vendor/lib64/libdrmutils.so
 vendor/lib64/libgpu_tonemapper.so
@@ -456,8 +460,6 @@ vendor/lib64/libqservice.so
 vendor/lib64/libsdmcore.so
 
 # Display
-vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service
-vendor/etc/init/vendor.qti.hardware.display.composer-service.rc
 vendor/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc
 vendor/lib/vendor.xiaomi.hardware.displayfeature@1.0.so
 vendor/lib/hw/displayfeature.default.so
