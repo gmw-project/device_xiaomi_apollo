@@ -44,7 +44,7 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 
 # Device-specific settings
 PRODUCT_PACKAGES += \
-    DeviceParts
+    XiaomiParts
 
 # Kernel
 $(call inherit-product, device/xiaomi/apollo-kernel/kernel.mk)
