@@ -1,0 +1,22 @@
+[
+  {
+    "repository": "device_xiaomi_sm8250-common",
+    "target_path": "device/xiaomi/sm8250-common"
+  },
+  {
+    "repository": "device_xiaomi_apollo-kernel",
+    "target_path": "device/xiaomi/apollo-kernel"
+  },
+  {
+    "remote": "github",
+    "repository": "xiaomi-sm8250-devs/android_kernel_xiaomi_sm8250",
+    "target_path": "kernel/xiaomi/sm8250",
+    "branch": "lineage-18.1",
+    "clone-depth": "1"
+  },
+  {
+    "repository": "vendor_xiaomi_apollo",
+    "target_path": "vendor/xiaomi/apollo",
+    "branch": "11"
+  }
+]
