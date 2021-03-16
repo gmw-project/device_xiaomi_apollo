@@ -34,7 +34,7 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 
 # Device-specific settings
 PRODUCT_PACKAGES += \
-    DeviceParts
+    XiaomiParts
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/apollo/apollo-vendor.mk)

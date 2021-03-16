@@ -27,8 +27,7 @@ import vendor.xiaomi.hardware.touchfeature.V1_0.ITouchFeature;
 public class BootCompletedReceiver extends BroadcastReceiver {
 
     private static final boolean DEBUG = false;
-    private static final String TAG = "DeviceParts";
-
+    private static final String TAG = "XiaomiParts";
     public static final String SHAREDD2TW = "sharadeD2TW";
     private ITouchFeature mTouchFeature;
 
