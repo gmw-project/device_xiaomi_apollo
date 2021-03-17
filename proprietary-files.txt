@@ -17,6 +17,10 @@ vendor/lib64/hw/audio.primary.kona.so
 vendor/lib64/libaudio_log_utils.so
 vendor/lib64/libaudioroute_ext.so
 vendor/lib64/vendor.qti.hardware.audiohalext@1.0.so
+vendor/lib/libgcs-calwrapper.so
+vendor/lib/libgcs-ipc.so
+vendor/lib/libgcs.so
+vendor/lib/libsmwrapper.so
 
 # ACDB
 vendor/etc/acdbdata/adsp_avs_config.acdb
@@ -446,30 +450,18 @@ vendor/lib64/libcvp2_hfi.so
 vendor/lib64/libcvp_common.so
 vendor/lib64/libcvpcpuRev_skel.so
 
-# Display-Hardware
-vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service
-vendor/etc/init/vendor.qti.hardware.display.composer-service.rc
-vendor/lib/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so
-vendor/lib64/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so
-vendor/lib64/libdrmutils.so
-vendor/lib64/libgpu_tonemapper.so
-vendor/lib64/libgralloccore.so
-vendor/lib64/libgrallocutils.so
-vendor/lib64/libqdMetaData.so
-vendor/lib64/libqservice.so
-vendor/lib64/libsdmcore.so
-
 # Display
-vendor/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc
-vendor/lib/vendor.xiaomi.hardware.displayfeature@1.0.so
 vendor/lib/hw/displayfeature.default.so
 vendor/lib/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so
-vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
+vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service
+vendor/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc
+vendor/lib/vendor.xiaomi.hardware.displayfeature@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.0_vendor.so
 vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.1.so
 vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.1_vendor.so
 vendor/lib64/hw/displayfeature.default.so
+vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
 vendor/lib64/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so
 vendor/etc/ltm_config_xiaomi_37_02_0a_video_mode_dsc_dsi_panel.xml
 vendor/etc/mdss_dsi_j3s_37_02_0a_dsc_video_mi.xml
@@ -542,15 +534,6 @@ vendor/lib64/hw/fingerprint.fpc.so
 # Lights
 vendor/lib/hw/lights.kona.so
 vendor/lib64/hw/lights.kona.so
-
-# Listen
-vendor/lib/hw/android.hardware.soundtrigger@2.3-impl.so
-vendor/lib/hw/sound_trigger.primary.kona.so
-vendor/lib/libgcs-calwrapper.so
-vendor/lib/libgcs-ipc.so
-vendor/lib/libgcs.so
-vendor/lib/libsmwrapper.so
-vendor/lib64/hw/android.hardware.soundtrigger@2.3-impl.so
 
 # OMX
 vendor/lib/libAlacSwDec.so
