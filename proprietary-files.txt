@@ -519,12 +519,6 @@ vendor/firmware/spk1_playback_delta.txt
 vendor/firmware/spk1_voice_delta.txt
 vendor/firmware/spk2_playback_delta.txt
 vendor/firmware/spk2_voice_delta.txt
-vendor/firmware/wigig/wigig.ini
-vendor/firmware/wlan/qca_cld/qca6390/WCNSS_qcom_cfg.ini
-vendor/firmware/wlan/qca_cld/qca6390/wlan_mac.bin
-vendor/firmware/wlan/qca_cld/qca6490/WCNSS_qcom_cfg.ini
-vendor/firmware/wlan/qca_cld/qca6490/wlan_mac.bin
-vendor/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini
 
 # Fingerprint
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
