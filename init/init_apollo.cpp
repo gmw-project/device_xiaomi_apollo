@@ -49,32 +49,56 @@ void property_override(char const prop[], char const value[], bool add = true)
     }
 }
 
+std::vector<std::string> ro_props_default_source_order = {
+    "odm.",
+    "product.",
+    "system.",
+    "vendor.",
+    "system_ext.",
+};
+
+void set_ro_build_prop(const std::string &source, const std::string &prop,
+        const std::string &value, bool product = false) {
+    std::string prop_name;
+
+    if (product) {
+        prop_name = "ro.product." + source + prop;
+    } else {
+        prop_name = "ro." + source + "build." + prop;
+    }
+
+    property_override(prop_name.c_str(), value.c_str(), false);
+}
+
+void set_device_props(const std::string fingerprint, const std::string description,
+        const std::string brand, const std::string device, const std::string model) {
+    for (const auto &source : ro_props_default_source_order) {
+        set_ro_build_prop(source, "fingerprint", fingerprint);
+        set_ro_build_prop(source, "brand", brand, true);
+        set_ro_build_prop(source, "device", device, true);
+        set_ro_build_prop(source, "model", model, true);
+    }
+
+    property_override("ro.build.fingerprint", fingerprint.c_str());
+    property_override("ro.build.description", description.c_str());
+}
+
 void vendor_load_properties() {
-    std::string region = GetProperty("ro.boot.hwc", "");
     std::string product = GetProperty("ro.boot.product.hardware.sku", "");
 
+    property_override("ro.product.brand", "Xiaomi");
+    property_override("ro.product.model", "M2007J3SG");
+    property_override("ro.product.device", "apollo");
     property_override("ro.oem_unlock_supported", "0");
-    property_override("ro.build.description", "redfin-user 11 RQ1A.210205.004 7038034 release-keys");
-    property_override("ro.build.fingerprint", "google/redfin/redfin:11/RQ1A.210205.004/7038034:user/release-keys");
     if (product.find("std") != std::string::npos) {
-        if (product.find("GLOBAL") != std::string::npos) {
-            property_override("ro.product.brand", "Xiaomi");
-            property_override("ro.product.model", "Mi 10T");
-            property_override("ro.product.device", "apollo");
-        } else if (product.find("CN") != std::string::npos) {
-            property_override("ro.product.brand", "Redmi");
-            property_override("ro.product.model", "Redmi K30s Ultra");
-            property_override("ro.product.device", "apollo");
-        }
+        set_device_props(
+                "Xiaomi/apollo_eea/apollo:11/RKQ1.200826.002/V12.1.2.0.RJDEUXM:user/release-keys",
+                "apollo_eea-user 11 RKQ1.200826.002 V12.1.2.0.RJDEUXM release-keys",
+                "Xiaomi", "apollo", "Xiaomi Mi 10T");
     } else if (product.find("pro") != std::string::npos) {
-        if (product.find("GLOBAL") != std::string::npos) {
-            property_override("ro.product.brand", "Xiaomi");
-            property_override("ro.product.model", "Mi 10T Pro");
-            property_override("ro.product.device", "apollopro");
-        } else if (product.find("INDIA") != std::string::npos) {
-            property_override("ro.product.brand", "Xiaomi");
-            property_override("ro.product.model", "Mi 10T Pro");
-            property_override("ro.product.device", "apollopro");
-        }
+        set_device_props(
+                "Xiaomi/apollopro_eea/apollo:11/RKQ1.200826.002/V12.1.2.0.RJDEUXM:user/release-keys",
+		"apollopro_eea-user 11 RKQ1.200826.002 V12.1.2.0.RJDEUXM release-keys",
+		"Xiaomi", "apollo", "Xiaomi Mi 10T Pro");
     }
 }
