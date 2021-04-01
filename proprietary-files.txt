@@ -16,6 +16,7 @@ vendor/lib/hw/audio.primary.kona.so
 vendor/lib64/hw/audio.primary.kona.so
 vendor/lib64/libaudio_log_utils.so
 vendor/lib64/libaudioroute_ext.so
+vendor/lib/libultrasound.so
 vendor/lib64/vendor.qti.hardware.audiohalext@1.0.so
 vendor/lib/libgcs-calwrapper.so
 vendor/lib/libgcs-ipc.so
@@ -439,6 +440,10 @@ vendor/lib/libmmcamera_faceproc.so
 vendor/lib/libmmcamera_faceproc2.so
 vendor/lib64/libmmcamera_faceproc.so
 vendor/lib64/libmmcamera_faceproc2.so
+
+# Seccam
+vendor/lib/vendor.qti.hardware.seccam@1.0.so
+vendor/lib64/vendor.qti.hardware.seccam@1.0.so
 
 # Charger
 vendor/bin/batterysecret
