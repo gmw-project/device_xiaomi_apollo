@@ -13,8 +13,6 @@
 -->
 <resources>
 
-    <string name="refresh_rate_settings_title">Mi 10T/10T Pro Specific Settings</string>
-    <string name="device_refresh_rate">Refresh Rate</string>
      <!--  DT2W    -->
     <string name="dt2w_enable_title">Double-Tap to Wake </string>
     <string name="dt2w_enable_summary">Double-tap on lockscreen to wake device</string>
