@@ -11,18 +11,28 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from apollo device
 $(call inherit-product, device/xiaomi/apollo/device.mk)
 
-# Inherit some common NusantaraProject stuff.
-$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
+# Inherit some common dotProject stuff.
+$(call inherit-product, vendor/dot/config/common.mk)
 
-TARGET_USES_BLUR := true
-USE_PIXEL_CHARGING := true
-NAD_BUILD_TYPE := OFFICIAL
+# blur
+TARGET_SUPPORTS_BLUR := true
+
+# bootanim
 TARGET_BOOT_ANIMATION_RES := 1080
-USE_GAPPS ?= true
-USE_AOSP_CLOCK := true
+
+# gapps
+WITH_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
+TARGET_INCLUDE_PIXEL_CHARGER := true
+
+# Face unlock
+TARGET_USES_FACE_UNLOCK := true
+
+# dotOs
+DOT_OFFICIAL := false
 
 # Product
-PRODUCT_NAME := nad_apollo
+PRODUCT_NAME := dot_apollo
 PRODUCT_DEVICE := apollo
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
