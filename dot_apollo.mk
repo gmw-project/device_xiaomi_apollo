@@ -29,7 +29,7 @@ TARGET_INCLUDE_PIXEL_CHARGER := true
 TARGET_USES_FACE_UNLOCK := true
 
 # dotOs
-DOT_OFFICIAL := false
+#DOT_OFFICIAL := false
 
 # Product
 PRODUCT_NAME := dot_apollo
@@ -37,5 +37,7 @@ PRODUCT_DEVICE := apollo
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL ?= Mi 10T Pro
+
+BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ2A.210405.005/7181113:user/release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
