@@ -32,9 +32,5 @@ TARGET_NO_FOD := true
 
 PRODUCT_SHIPPING_API_LEVEL := 29
 
-# Device Parts
-PRODUCT_PACKAGES += \
-    DeviceParts
-
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/apollo/apollo-vendor.mk)
