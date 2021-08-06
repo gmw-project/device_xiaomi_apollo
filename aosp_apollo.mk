@@ -11,16 +11,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from apollo device
 $(call inherit-product, device/xiaomi/apollo/device.mk)
 
-# Inherit some common NusantaraProject stuff.
-$(call inherit-product, vendor/xdroid/config/common.mk)
+# Inherit some common stuff.
+$(call inherit-product, vendor/aosp/config/common.mk)
 
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_DISABLE_ALTERNATIVE_FACE_UNLOCK := true
-XDROID_UI_BLUR := true
-XDROID_BOOT_DARK := true
+TARGET_BOOT_ANIMATION_RES := 1440
 
 # Product
-PRODUCT_NAME := xdroid_apollo
+PRODUCT_NAME := aosp_apollo
 PRODUCT_DEVICE := apollo
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi

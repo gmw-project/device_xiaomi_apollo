@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/xdroid_apollo.mk
+    $(LOCAL_DIR)/aosp_apollo.mk
 
 COMMON_LUNCH_CHOICES := \
-    xdroid_apollo-user \
-    xdroid_apollo-userdebug \
-    xdroid_apollo-eng
+    aosp_apollo-user \
+    aosp_apollo-userdebug \
+    aosp_apollo-eng
