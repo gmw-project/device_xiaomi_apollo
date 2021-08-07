@@ -12,12 +12,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/apollo/device.mk)
 
 # Inherit some common stuff.
-$(call inherit-product, vendor/aosp/config/common.mk)
+$(call inherit-product, vendor/exthm/config/common_full_phone.mk)
 
-TARGET_BOOT_ANIMATION_RES := 1440
+EXTHM_GAPPS ?= true
+EXTHM_BUILDTYPE := BETA
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Product
-PRODUCT_NAME := aosp_apollo
+PRODUCT_NAME := exthm_apollo
 PRODUCT_DEVICE := apollo
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
