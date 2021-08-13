@@ -1,4 +1,4 @@
-# All blobs below are extracted - from APOLLO V12.5.2.0.RJDCNXM version, unless pinned
+# All blobs below are extracted - from APOLLO V12.5.2.0.RJDMIXM: version, unless pinned
 
 # ADSP modules
 vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so
