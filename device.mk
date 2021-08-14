@@ -22,7 +22,9 @@ TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
 PRODUCT_SHIPPING_API_LEVEL := 29
+
 # Properties
+TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
 TARGET_VENDOR_PROP := $(LOCAL_PATH)/vendor.prop
 
 # Inherit from xiaomi sm8250-common
