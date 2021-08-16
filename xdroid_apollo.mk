@@ -15,7 +15,7 @@ $(call inherit-product, device/xiaomi/apollo/device.mk)
 $(call inherit-product, vendor/xdroid/config/common.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_DISABLE_ALTERNATIVE_FACE_UNLOCK := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
 XDROID_UI_BLUR := true
 XDROID_BOOT_DARK := true
 
