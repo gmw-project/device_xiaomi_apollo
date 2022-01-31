@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/nad_apollo.mk
+    $(LOCAL_DIR)/syberia_apollo.mk
 
 COMMON_LUNCH_CHOICES := \
-    nad_apollo-user \
-    nad_apollo-userdebug \
-    nad_apollo-eng
+    syberia_apollo-user \
+    syberia_apollo-userdebug \
+    syberia_apollo-eng
