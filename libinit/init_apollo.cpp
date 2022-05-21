@@ -14,7 +14,7 @@ static const variant_info_t apollocn_info = {
     .device = "apollo",
     .marketname = "Redmi K30S Ultra",
     .model = "M2007J3SC",
-    .build_fingerprint = "Redmi/apollo_global/apollo:12/RKQ1.211001.001/V13.0.3.0.SJDMIXM:user/release-keys",
+    .build_fingerprint = "google/raven/raven:12/SP2A.220505.002/8353555:user/release-keys",
 
     .nfc = true,
 };
@@ -27,7 +27,7 @@ static const variant_info_t apollo_info = {
     .device = "apollo",
     .marketname = "Mi 10T",
     .model = "M2007J3SY",
-    .build_fingerprint = "Xiaomi/apollo_global/apollo:12/RKQ1.211001.001/V13.0.3.0.SJDMIXM:user/release-keys",
+    .build_fingerprint = "google/raven/raven:12/SP2A.220505.002/8353555:user/release-keys",
 
     .nfc = true,
 };
@@ -40,7 +40,7 @@ static const variant_info_t apollopro_info = {
     .device = "apollo",
     .marketname = "Mi 10T Pro",
     .model = "M2007J3SG",
-    .build_fingerprint = "Xiaomi/apollo_global/apollo:12/RKQ1.211001.001/V13.0.3.0.SJDMIXM:user/release-keys",
+    .build_fingerprint = "google/raven/raven:12/SP2A.220505.002/8353555:user/release-keys",
 
     .nfc = true,
 };
