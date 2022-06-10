@@ -25,6 +25,7 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_apollon
 
 # Kernel
 TARGET_KERNEL_CONFIG := vendor/arrow_apollo_defconfig
+TARGET_KERNEL_BUILD_USER := "goodmeow"
 
 # LED
 TARGET_LED_WHITE_ONLY := true
