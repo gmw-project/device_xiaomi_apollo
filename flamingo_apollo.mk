@@ -11,19 +11,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from apollo device
 $(call inherit-product, device/xiaomi/apollo/device.mk)
 
-# Inherit some common NusantaraProject stuff.
-$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
+# Inherit some common Flamingo OS stuff.
+$(call inherit-product, vendor/flamingo/target/product/flamingo.mk)
 
-TARGET_USES_BLUR := true
-TARGET_SUPPORTS_QUICK_TAP := true
-USE_PIXEL_CHARGING := true
-NAD_BUILD_TYPE ?= UNOFFICIAL
-TARGET_BOOT_ANIMATION_RES := 1080
-USE_GAPPS ?= true
-USE_AOSP_CLOCK := true
+# Flamingo OS build
+OFFICIAL_BUILD ?= false
 
 # Product
-PRODUCT_NAME := nad_apollo
+PRODUCT_NAME := flamingo_apollo
 PRODUCT_DEVICE := apollo
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
