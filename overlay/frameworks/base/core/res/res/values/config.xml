@@ -342,10 +342,10 @@
          Note: this value is temporary and is expected to be queried directly
          from the HAL in the future. -->
     <array name="config_sfps_sensor_props" translatable="false">
-        <item>@array/config_sfps_sensor_props_0</item>
+        <item>@array/config_sfps_sensor_props_apollo</item>
     </array>
 
-    <array name="config_sfps_sensor_props_0" translatable="false">
+    <array name="config_sfps_sensor_props_apollo" translatable="false">
         <item>local:4630946687422888065</item>
         <item>1080</item>
         <item>880</item>
