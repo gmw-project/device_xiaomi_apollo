@@ -346,8 +346,8 @@
     </array>
 
     <array name="config_sfps_sensor_props_apollo" translatable="false">
-        <item>local:4630946687422888065</item>
-        <item>1080</item>
+        <item></item> <!--item>displayId</item-->
+        <item></item> <!--item>sensorLocationX</item-->
         <item>880</item>
         <item>200</item>
     </array>
