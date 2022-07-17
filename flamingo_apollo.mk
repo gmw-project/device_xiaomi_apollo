@@ -16,6 +16,7 @@ $(call inherit-product, device/xiaomi/apollo/device.mk)
 
 # Flamingo OS build
 OFFICIAL_BUILD ?= false
+TARGET_BOOT_ANIMATION_RES := 1440
 
 PRODUCT_NAME := flamingo_apollo
 PRODUCT_DEVICE := apollo
