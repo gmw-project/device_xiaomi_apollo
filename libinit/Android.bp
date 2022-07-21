@@ -5,9 +5,8 @@
 //
 
 cc_library_static {
-    name: "init_xiaomi_apollo",
-    srcs: ["init_xiaomi_apollo.cpp"],
-    whole_static_libs: ["//device/xiaomi/sm8250-common:libinit_xiaomi_kona"],
-    include_dirs: ["system/core/init"],
-    recovery_available: true,
+    name: "libinit_apollon",
+    defaults: ["//device/xiaomi/sm8250-common:libinit_kona_defaults"],
+    srcs: ["init_apollo.cpp"],
+    whole_static_libs: ["//device/xiaomi/sm8250-common:libinit_kona"],
 }
