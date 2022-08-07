@@ -19,8 +19,8 @@ BUILD_BROKEN_ENFORCE_SYSPROP_OWNER := true
 TARGET_SCREEN_DENSITY := 440
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_apollon
-TARGET_RECOVERY_DEVICE_MODULES := libinit_apollon
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_apollo
+TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_apollo
 
 # Kernel
 TARGET_KERNEL_CONFIG := vendor/arrow_apollo_defconfig
